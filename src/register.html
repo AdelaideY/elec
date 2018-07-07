@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <script src="https://cdn.bootcss.com/require.js/2.3.5/require.js" data-main="./js/register.js"></script>
+    <link rel="stylesheet" href="../dist/common.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ret">
+        <div class="container clearfix">
+            <a href="">
+                <img src="img/registerlog.jpg" alt="">
+            </a>
+            <span>欢迎注册</span>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="recr">
+            <div class="recr_header">
+                <span>用户注册</span>
+                <b class="recr_r fr">已有账号？
+                    <a href="./login.html" id="go_login">立即登录</a>
+                </b>
+            </div>
+         
+                    <div class="login_error_section clearfix">
+                        <div class="error_tips" id="DIVRegisterMsg"><i></i><span>邮箱或手机号格式不正确</span></div>
+                    </div>
+                    <div class="login_account_total clearfix">
+                        <div class="input_icon fa fa-user"></div>
+                        <input type="text" id="new_account"  class="login_input_size input_error" placeholder="邮箱、手机号" maxlength="50">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="login_password_total clearfix">
+                        <div class="input_icon fa fa-unlock-alt"></div>
+                        <input type="password" id="reg_password" class="password login_input_size input_error" placeholder="6-16位字符，必须包含英文字母和数字" maxlength="16">
+                        <i></i>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="code_total clearfix">
+                        <div class="input_icon fa fa-keyboard-o"></div>
+                        <input type="text" id="reg_verifyCode" name="reg_verifyCode" class="code_input_size input_error fl" maxlength="4" placeholder="输入验证码">
+                        <input  class="verifyimg reloadverify fl" style="vertical-align:middle;margin-left: 15px;width:82px;height:40px;">
+                        <i></i>
+                    </div>
+                   
+                    <div class="deal">
+                        <input type="checkbox" class="deal_agree" checked="">&nbsp;&nbsp;我已阅读并同意<a href="/StaticPage/user-agreement.html" class="fancybox fancybox.iframe user_agreement a_blue">《速普商城用户协议》</a>
+                    </div>
+                    <button id="btnRegiste" class="btn fl res_submit"><span>注  册</span></button>
+                    <div class="clear"></div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

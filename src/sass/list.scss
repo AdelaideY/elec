@@ -1,0 +1,161 @@
+main {
+    background-color: #f5f5f5;
+  
+    ul{
+        li {
+            float: left;
+            width: 258px;
+            height: auto;
+            border: 3px solid #FFF;
+            background: #FFFFFF;
+            padding: 50px 10px 10px 10px;
+            margin: 0 10px 10px 0;
+            transition: 0.4s;
+            .list_good_img{
+                margin: 0 auto;
+                position: relative;
+                >a{
+                    position: relative;
+                    display: block;
+                    >img{
+                        display:inline-block;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        position: relative;
+                    }
+                }
+            }
+            .list_good_des {
+                width: 100%;
+                height: 48px;
+                overflow: hidden;
+                padding-bottom: 5px;
+                a{
+                    color: #666;
+                    font-size: 12px;
+                    span{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #e5004b;
+                        margin-right: 4px;            
+                    }
+                }
+            }
+            .list_good_price {
+                padding-bottom: 10px;
+                span:nth-of-type(1){
+                    color: #e5004b;
+                    font-weight: 600;
+                }
+                span:nth-of-type(2){
+                    text-decoration: line-through;
+                    margin: 2px 0 0 3px;
+                    color: #a2a2a2;
+                }
+                .ac_info {
+                    float: right;
+                    color: #e5004b;
+                    cursor: pointer;
+                    position: relative;
+
+                    border-top: 1px solid #fff;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    margin-bottom: -1px;
+                    z-index: 999;
+                    >span {
+                        z-index: 1000;
+                        background: #fff;
+                        position: relative;
+                        height: 24px;
+                        width: 80px;
+                        display: inline-block;
+                        padding: 0 0 0 10px;
+                    }
+                    .info_box {
+                        position: absolute;
+                        top: 23px;
+                        left: -1px;
+                        border: 1px solid #bdbdbd;
+                        padding: 0 10px;
+                        color: #666666;
+                        width: 200px;
+                        z-index: 999;
+                        background: #FFFFFF;
+                        display: none;
+                        div {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            span {
+                                padding: 0 2px;
+                                background: #ff8a00;
+                                color: #FFFFFF;
+                                margin-right: 5px;
+                            }
+                        }
+    
+                    }
+                }
+            }
+            .list_good_addbox {
+                padding-left: 5px;
+                .list_good_sumbox {
+                    border: 1px solid #eaeaea;
+                    padding: 1px;
+                    text-align: center;
+                    input{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .list_good_upnum {
+                        display: block;
+                        background-color: #EAEAEA;
+                        width: 11px;
+                        height: 14px;
+                        line-height: 11px;
+                    }
+                    .list_good_downnum {
+                        display: block;
+                        margin-right: -11px;
+                        margin-top: 16px;
+                        background-color: #EAEAEA;
+                        width: 11px;
+                        height: 14px;
+                        line-height: 11px;
+                    }
+                }
+                .list_good_addcart {
+                    display: inline-block;
+                    padding: 4px 27px;
+                    text-align: center;
+                    background-color: #f6f6f6;
+                    border: 1px solid #eaeaea;
+                    margin-left: 4px;
+                    .list_good_addfav {
+                        display: inline-block;
+                        background-color: #f6f6f6;
+                        border: 1px solid #eaeaea;
+                        margin-left: 4px;
+                        height: 32px;
+                        width: 56px;
+                        line-height: 32px;
+                        text-align: center;
+                    }
+                }
+                .list_good_addfav {
+                    background-color: #f6f6f6;
+                    border: 1px solid #eaeaea;
+                    margin-left: 4px;
+                    height: 32px;
+                    width: 56px;
+                    line-height: 32px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    }
+    

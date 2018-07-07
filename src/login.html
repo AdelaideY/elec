@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <script src="https://cdn.bootcss.com/require.js/2.3.5/require.js" data-main="./js/login"></script>
+    <link rel="stylesheet" href="../dist/common.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="ret">
+        <div class="container clearfix">
+            <a href="">
+                <img src="img/registerlog.jpg" alt="">
+            </a>
+            <span>欢迎登录</span>
+        </div>
+    </div>
+    <div class="rec">
+        <div class="recr">
+            <div class="recr_header">
+                <span>用户登录</span>
+                <b class="recr_r fr">没有速普账号？
+                    <a href="./register.html" id="go_login">立即注册</a>
+                </b>
+            </div>
+
+            <div class="login_error_section clearfix">
+                <div class="error_tips" id="DIVRegisterMsg">
+                    <i></i>
+                    <span>邮箱或手机号格式不正确</span>
+                </div>
+            </div>
+            <div class="login_account_total clearfix">
+                <div class="input_icon fa fa-user"></div>
+                <input type="text" id="new_account" class="login_input_size input_error" placeholder="邮箱、手机号" maxlength="50">
+            </div>
+            <div class="login_password_total clearfix">
+                <div class="input_icon fa fa-unlock-alt"></div>
+                <input type="password" id="reg_password" class="password login_input_size input_error" placeholder="6-16位字符，必须包含英文字母和数字"
+                    maxlength="16">
+            </div>
+            <div class="re_checkbox_all">
+                <span class="re_checkbox fl">
+                    <input type="checkbox" value="记住用户名" id="cbRememberUserName">&nbsp;记住用户名</span>
+                <span class="re_checkbox auto_login fl">
+                    <input type="checkbox" value="自动登录" id="cbAutoLogin" checked="checked">&nbsp;自动登录</span>
+                <span class="re_forget">
+                    <a href="#find_password_step1" class="fancybox login_forget_pas fr">忘记密码了？</a>
+                </span>
+            </div>
+            <button id="btnLogin" class="btn fl res_submit">
+                <span>登录</span>
+            </button>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

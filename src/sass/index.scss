@@ -1,0 +1,67 @@
+#banner {
+    height: 447px;
+    overflow: hidden;
+    position: relative;
+    ul {
+        width: 2732px;
+        li {
+            float: left;
+            width: 1366px;
+            height: 447px;
+            background-size: cover;
+            overflow: hidden;
+        }
+        li:last-child {
+            background: url('../src/img/lunbo-left1.jpg') no-repeat center center;
+        }
+        li:nth-of-type(2) {
+            background: url('../src/img/lunbo-left2.jpg') no-repeat center center;
+        }
+        li:first-child {
+            background: url('../src/img/lunbo-left1.jpg') no-repeat center center;
+        }
+    }
+    div {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        i {
+            display: inline-block;
+            width: 42px;
+            height: 11px;
+            opacity: 0.5;
+        }
+        i:first-child {
+            background-color: red;
+        }
+        i:last-child {
+            background-color: #666;
+        }
+    }
+    span {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        margin: -30px 0 0 285px;
+        left: 57%;
+        z-index: 200;
+        width: 40px;
+        height: 60px;
+        opacity: 0.5;
+    }
+    span:nth-of-type(1){
+        left:0;
+        background: url('../src/img/slider-arrow.png') -126px -137px #000 no-repeat;
+    }
+    span:nth-of-type(2){
+        background: url('../src/img/slider-arrow.png') -6px -137px #000 no-repeat;
+    }
+    img{
+        position: absolute;
+        right: 5%;
+        z-index: 1001;
+        
+    }
+}
