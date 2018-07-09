@@ -9,6 +9,26 @@ require.config({
 define(['jquery', 'http', 'magnifying'], function ($, http, magnifying) {
     $(function () {
         $('header').load('./header.html', function () {
+            function ranload(){
+                var mes = window.localStorage.getItem('dl');
+                if(mes !==null){
+                    mes = mes.split(';');
+                    var txinxi= '<p>Hi<a href="javascript:">'+ mes[0].split(':')[1] +'</a>欢迎来到速普城[<a href="../src/index.html" class="layout">退出</a>]</p>';
+                   $(txinxi).appendTo($('.y-top-left'));
+                }else{
+                    var mess = '<p>欢迎来到速普商城！请['+
+                        '<a href="./login.html">登录</a>]['+
+                        '<a href="./register.html">免费注册</a>'+
+                        ']</p>'
+                        $(mess).appendTo($('.y-top-left'));
+                }
+            }
+            ranload();
+
+            $('.layout').click(function(){
+                window.localStorage.clear();
+                ranload();
+            })
             $.post('./api/products.php').then(function (res) {
                 var datas = window.eval('(' + res + ')').data1;
                 var ssss = 0;

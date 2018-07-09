@@ -19,7 +19,7 @@
 		echo "{state: false, message: '登录失败！！！'}";
 	} else {
 		echo "{state: true, message: '登录成功！！！'}";
-		session_start();
-		$_SESSION["login_email"] = $result[0]->email;		
+		// session_start();
+		// $_SESSION["login_email"] = $result[0]->email;		
 	}
 ?>

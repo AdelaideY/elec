@@ -34,18 +34,16 @@ define(['jquery','http'],function($,http){
       
         $('#btnLogin').click(function(){
             if ($('#new_account').val() !== '' && $('.verifyimg').val() !== '') {
-                console.log($('#new_account').val(), $('#reg_password').val())
                 $.post('./api/login.php', {
                     name: $('#new_account').val(),
                     pwd: $('#reg_password').val()
                 }).then(function (res) {
                     if (res == "{state: false, message: '登录失败！！！'}") {
-
                         var data = window.eval('(' + res + ')');
-                      
                         $('.error_tips span').text(data.message);
                         $('.error_tips').show();
                     } else if (res == "{state: true, message: '登录成功！！！'}") {
+                        console.log(666);
                         window.localStorage.setItem('dl','name:'+$('#new_account').val()+';pwd:'+$('#reg_password').val());
                         window.location.href = '../src/index.html';
                     }

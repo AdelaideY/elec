@@ -5,7 +5,7 @@ require.config({
 })
 
 define(['jquery'], function($){
-    var baseUrl = "http://localhost:1808/src/";
+    var baseUrl = "http://10.3.136.12:1808/src/";
     function filterUrl(_url){
         if(_url.startsWith('http')){
             return _url;
